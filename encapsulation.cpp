@@ -26,8 +26,9 @@ class instrument{
         n_obj++;
     };
 
-    void display(void)
+    void display(void) const
     {
+        Size=4;
         cout<<"Instrument Number = "<<n_obj<<endl;
         cout<<"Name = "<<name<<endl;
         cout<<"colour= "<<colour<<endl;
