@@ -19,16 +19,10 @@ class instrument{
         n_obj++;
         };
 
-    instrument(string name,string colour,int Size){
-        this->name=name;
-        this->colour=colour;
-        this->Size=Size;
-        n_obj++;
-    };
+    instrument(string,string,int);
 
     void display(void) const
     {
-        Size=4;
         cout<<"Instrument Number = "<<n_obj<<endl;
         cout<<"Name = "<<name<<endl;
         cout<<"colour= "<<colour<<endl;
@@ -38,6 +32,15 @@ class instrument{
 };
 
 int instrument::n_obj=0;
+
+instrument::instrument(string name,string colour,int size)
+{
+
+        this->name=name;
+        this->colour=colour;
+        this->Size=Size;
+        n_obj++;
+}
 
 
 int main(void)
